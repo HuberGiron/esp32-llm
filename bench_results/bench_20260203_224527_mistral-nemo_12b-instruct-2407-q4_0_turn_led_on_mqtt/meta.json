@@ -1,0 +1,17 @@
+{
+  "timestamp": "20260203_224527",
+  "model": "mistral-nemo:12b-instruct-2407-q4_0",
+  "prompt": "turn led on",
+  "transport": "mqtt",
+  "mqtt": {
+    "host": "test.mosquitto.org",
+    "port": 1883,
+    "cmd_topic": "huber/bench/led/cmd",
+    "qos": 0,
+    "wait_publish": false
+  },
+  "runs": {
+    "warmup": 10,
+    "n_runs": 1000
+  }
+}
